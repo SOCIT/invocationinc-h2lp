@@ -57,7 +57,7 @@ const FAQS: Array<[string, string]> = [
   ],
   [
     "What exactly do I get?",
-    "The complete book as a PDF \u2014 sixteen chapters, eight coaching sessions, about 34,000 words \u2014 available to download the second your payment clears. The EPUB edition is in final formatting; every buyer gets it emailed free the moment it\u2019s done.",
+    "The complete book \u2014 sixteen chapters, eight coaching sessions, about 34,000 words \u2014 as a PDF and an EPUB, available to download the second your payment clears.",
   ],
 ];
 
@@ -132,8 +132,7 @@ export function H2LPPage() {
           />
           <p className="lf-tiny">
             First 100 readers: enter code <strong>{LAUNCH_CODE}</strong> at checkout
-            and pay $9.97. PDF instant download · EPUB emailed free when formatting
-            is done.
+            and pay $9.97. PDF + EPUB instant download.
           </p>
         </div>
 
@@ -334,8 +333,7 @@ export function H2LPPage() {
             label={<>Get the Ebook — {bookProduct.priceDisplay}</>}
           />
           <p className="lf-tiny">
-            PDF available to download the second your payment clears. The EPUB edition
-            is in final formatting — every buyer gets it emailed free the moment it&rsquo;s done.
+            PDF and EPUB available to download the second your payment clears.
           </p>
           <p className="lf-tiny">
             Sold here direct from the author.

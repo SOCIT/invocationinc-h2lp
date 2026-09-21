@@ -50,7 +50,7 @@ export const products: Product[] = [
     id: "book",
     name: "How to Like People — Ebook",
     shortName: "The Ebook",
-    description: "The complete book. PDF available instantly; EPUB edition in final formatting, emailed to buyers.",
+    description: "The complete book. PDF + EPUB, available instantly.",
     priceDisplay: "$19.97",
     priceCents: 1997,
     listPriceDisplay: "$39.97",
@@ -58,7 +58,7 @@ export const products: Product[] = [
     stripePriceEnvKey: "STRIPE_PRICE_BOOK",
     paymentLinkUrl: "",
     highlighted: true,
-    features: ["Book PDF — instant download", "EPUB edition — emailed when formatting is done"],
+    features: ["Book PDF — instant download", "EPUB edition — instant download"],
   },
 ];
 

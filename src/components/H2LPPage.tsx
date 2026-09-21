@@ -280,27 +280,39 @@ export function H2LPPage() {
 
         <h2>The author</h2>
 
-        <p>
-          <strong>Jonah Dorman</strong> is a U.S. Army combat veteran. He trained foster
-          parents, social workers, and child-protection staff in trauma-informed care
-          and positive communication &mdash; and served as VP or Chair/CoChair of 7+
-          organizations bridging foster parents, the agencies that handle placements,
-          and the government.
-        </p>
+        <div className="lf-author">
+          <img
+            src="/img/author-jonah.jpg"
+            alt="Jonah Dorman"
+            width={180}
+            height={180}
+            className="lf-author-photo"
+          />
+          <div className="lf-author-bio">
+            <p>
+              <strong>Jonah Dorman</strong> is a U.S. Army combat veteran. He trained foster
+              parents, social workers, and child-protection staff in trauma-informed care
+              and positive communication — and served as VP or Chair/CoChair of 7+
+              organizations bridging foster parents, the agencies that handle placements,
+              and the government.
+            </p>
 
-        <p>
-          He&rsquo;s been GM, VP, interim CEO &mdash; managing coders and IT workers (not always
-          the best communicators) and running performance reviews for a living. He has
-          studied hypnosis, NLP, sales, and performance.
-        </p>
+            <p>
+              He&apos;s been GM, VP, interim CEO — managing coders and IT workers (not always
+              the best communicators) and running performance reviews for a living. He has
+              studied hypnosis, NLP, sales, and performance. For a decade or so, he has
+              run a company that makes weapons components for the U.S. Navy.
+            </p>
 
-        <p>
-          The book is what those jobs have in common: humans respond to incentives,
-          stories, and repetition &mdash; whether you admit it or not. Years of knowledge,
-          hundreds of books and published papers &mdash; dumbed down into methods normal
-          people can use. No guru worship. No &ldquo;believe in yourself.&rdquo; A stack you
-          can practice.
-        </p>
+            <p>
+              The book is what those jobs have in common: humans respond to incentives,
+              stories, and repetition &mdash; whether you admit it or not. Years of knowledge,
+              hundreds of books and published papers &mdash; dumbed down into methods normal
+              people can use. No guru worship. No &ldquo;believe in yourself.&rdquo; A stack you
+              can practice.
+            </p>
+          </div>
+        </div>
 
         <h2 id="offer">Get the book</h2>
 

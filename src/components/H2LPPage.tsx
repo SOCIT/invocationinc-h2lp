@@ -69,7 +69,19 @@ export function H2LPPage() {
       </div>
 
       <header className="lf-site-header">
-        <div>Invocation Inc · Human Performance Engineers</div>
+        <a
+          href="https://invocationinc.com/"
+          aria-label="Invocation Inc"
+          className="lf-imprint-mark"
+        >
+          <img
+            src="/img/invocation-logo.png"
+            alt="Invocation Inc"
+            width={130}
+            height={30}
+            className="lf-imprint-logo"
+          />
+        </a>
         <Link href="#offer">Get the Ebook — {bookProduct.priceDisplay}</Link>
       </header>
 
@@ -339,6 +351,18 @@ export function H2LPPage() {
 
       <footer className="lf-footer">
         <p>© {new Date().getFullYear()} Invocation Inc. Not therapy. Not medical advice.</p>
+        <p className="lf-imprint-line">
+          <img
+            src="/img/invocation-logo.png"
+            alt="Invocation Inc"
+            width={84}
+            height={20}
+            className="lf-imprint-logo-sm"
+          />
+          <span>
+            An <a href="https://invocationinc.com/">Invocation Inc</a> publication
+          </span>
+        </p>
         <p>
           <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link>
         </p>

@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { brand } from "@/lib/products";
-import { EpubNotify } from "@/components/EpubNotify";
 
 export const metadata: Metadata = {
   title: "Purchase complete",
@@ -24,8 +23,8 @@ export default async function SuccessPage({
         <p className="lf-stamp">Payment confirmed. Welcome, operator.</p>
         <h1>Your copy of {brand.bookTitle}</h1>
         <p>
-          The PDF is ready right now — download it below and keep it forever.
-          Check your email for the Stripe receipt.
+          Both editions are ready right now — download them below and keep them
+          forever. Check your email for the Stripe receipt.
         </p>
         <div className="lf-cta">
           <a
@@ -35,11 +34,16 @@ export default async function SuccessPage({
           >
             Download the PDF
           </a>
+          <a
+            className="lf-btn lf-btn-ghost"
+            href="/downloads/h2lp.epub"
+            download="How-to-Like-People.epub"
+          >
+            Download the EPUB
+          </a>
           <p className="lf-tiny">
-            The EPUB edition is in final formatting. Leave your email and it lands
-            in your inbox free the moment it&apos;s done.
+            PDF for print and desktop; EPUB for e-readers, phones, and tablets.
           </p>
-          <EpubNotify />
         </div>
         {sessionId && (
           <p className="lf-tiny" style={{ color: "var(--soft)" }}>

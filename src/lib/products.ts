@@ -1,6 +1,8 @@
 /**
  * H2LP offer — the ebook, direct from the author.
- * PDF + EPUB. Do not hardcode Stripe Price IDs; wire them via env.
+ * One product, one price: the $9.99 ebook. PDF + EPUB.
+ * No workbook and no bundle on this page. Do not hardcode Stripe Price IDs.
+ * $19.97 is retired. Checkout must charge the $9.99 Price.
  */
 
 export type ProductId = "book";
@@ -10,12 +12,9 @@ export interface Product {
   name: string;
   shortName: string;
   description: string;
-  /** Charge price shown on buttons. */
+  /** Charge price shown on the page. One price. No strike. */
   priceDisplay: string;
   priceCents: number;
-  /** List / strike price when different from charge price. */
-  listPriceDisplay?: string;
-  listPriceCents?: number;
   /** Env var name holding the Stripe Price ID for this offer. */
   stripePriceEnvKey: "STRIPE_PRICE_BOOK";
   /**
@@ -42,19 +41,14 @@ export const brand = {
   red: "#d10f28",
 } as const;
 
-/** First-100 launch code: $19.97 -> $9.97 at checkout (enter at payment step). */
-export const LAUNCH_CODE = "H2LP100";
-
 export const products: Product[] = [
   {
     id: "book",
     name: "How to Like People — Ebook",
     shortName: "The Ebook",
     description: "The complete book. PDF + EPUB, available instantly.",
-    priceDisplay: "$19.97",
-    priceCents: 1997,
-    listPriceDisplay: "$39.97",
-    listPriceCents: 3997,
+    priceDisplay: "$9.99",
+    priceCents: 999,
     stripePriceEnvKey: "STRIPE_PRICE_BOOK",
     paymentLinkUrl: "",
     highlighted: true,

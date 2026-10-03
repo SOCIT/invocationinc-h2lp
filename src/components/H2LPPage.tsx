@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BuyButton } from "./BuyButton";
-import { bookProduct, LAUNCH_CODE } from "@/lib/products";
+import { bookProduct } from "@/lib/products";
 
 const CHAPTERS: Array<[string, string]> = [
   ["Introduction — The Contract", "Every interaction is an exchange of value, and \u201ccommunication is what the listener does.\u201d Practical reps, not inspiration. Not motivation talk. Not a list of things to say."],
@@ -64,10 +64,6 @@ const FAQS: Array<[string, string]> = [
 export function H2LPPage() {
   return (
     <>
-      <div className="lf-bar">
-        HOW TO LIKE PEOPLE — <span className="lf-now">$19.97 · FIRST 100 READERS PAY $9.97</span>
-      </div>
-
       <header className="lf-site-header">
         <a
           href="https://invocationinc.com/"
@@ -125,16 +121,9 @@ export function H2LPPage() {
           yourself.&rdquo; Reps.
         </p>
 
-        <div className="lf-cta" id="buy-hero">
-          <BuyButton
-            productId="book"
-            label={<>Get the Ebook — {bookProduct.priceDisplay}</>}
-          />
-          <p className="lf-tiny">
-            First 100 readers: enter code <strong>{LAUNCH_CODE}</strong> at checkout
-            and pay $9.97. PDF + EPUB instant download.
-          </p>
-        </div>
+        <p className="lf-tiny" style={{ textAlign: "center" }}>
+          PDF + EPUB. {bookProduct.priceDisplay}.
+        </p>
 
         <h2>Nobody wrote down the rules</h2>
 
@@ -320,14 +309,48 @@ export function H2LPPage() {
           <strong>How to Like People</strong> &mdash; the complete book, direct from
           the author. Sixteen chapters, eight coaching sessions, about 34,000 words:
           the whole interaction stack, from first smile to running the room.{" "}
-          <s>{bookProduct.listPriceDisplay}</s>{" "}
           <strong>{bookProduct.priceDisplay}</strong>.
         </p>
 
+        <section className="lf-formats" aria-label="Formats">
+          <h2>Formats</h2>
+
+          <div className="lf-format">
+            <p>
+              <strong>READ.</strong> The ebook. PDF + EPUB. {bookProduct.priceDisplay}.
+            </p>
+            {/*
+              Retailer buttons omitted. No listing URL in the repo.
+              Missing: Amazon
+              Missing: KDP
+              Missing: Draft2Digital
+            */}
+          </div>
+
+          <div className="lf-format">
+            <p>
+              <strong>LISTEN.</strong> Audiobook. In production.
+            </p>
+            {/*
+              Audiobook link omitted. No listing URL in the repo.
+              Missing: Audible
+            */}
+          </div>
+
+          {/* DO omitted. No workbook product in the repo. */}
+
+          <div className="lf-format">
+            <p>
+              <strong>WATCH.</strong> Video. In production.
+            </p>
+            {/*
+              Video link omitted. No listing URL in the repo.
+              Missing: YouTube
+            */}
+          </div>
+        </section>
+
         <div className="lf-cta">
-          <p className="lf-cta-kicker">
-            First 100 readers pay $9.97 — enter code <strong>{LAUNCH_CODE}</strong> at checkout
-          </p>
           <BuyButton
             productId="book"
             label={<>Get the Ebook — {bookProduct.priceDisplay}</>}

@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   getSiteUrl,
   getStripe,
-  getStripePriceId,
+  resolveBookPriceId,
 } from "@/lib/stripe";
 import { isValidProductId } from "@/lib/products";
 
@@ -21,14 +21,26 @@ export async function POST(request: NextRequest) {
     }
 
     const stripe = getStripe();
-    const priceId = getStripePriceId(productId);
 
-    if (!stripe || !priceId) {
+    if (!stripe) {
       return NextResponse.json(
         {
           error: "checkout_not_configured",
           message:
             "Stripe is not configured yet. Add STRIPE_SECRET_KEY and STRIPE_PRICE_BOOK to env — see README.",
+        },
+        { status: 503 }
+      );
+    }
+
+    const priceId = await resolveBookPriceId(stripe);
+
+    if (!priceId) {
+      return NextResponse.json(
+        {
+          error: "checkout_not_configured",
+          message:
+            "Checkout is not wired to the $9.99 Price. STRIPE_PRICE_BOOK must be that Price, or the retired price on the same product.",
         },
         { status: 503 }
       );

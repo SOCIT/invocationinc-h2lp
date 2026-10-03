@@ -6,11 +6,13 @@ Sales copy lives in `src/components/H2LPPage.tsx` and follows the approved copy 
 
 ## Offer
 
-| Offer | Charge | List | Includes | Stripe env |
-|---|---|---|---|---|
-| **book** (BOOK) | **$19.97** (1997¢) | $39.97 | Ebook: PDF instantly + EPUB when formatting is done | `STRIPE_PRICE_BOOK` |
+| Offer | Price | Includes | Stripe env |
+|---|---|---|---|
+| **book** (BOOK) | **$9.99** (999¢) | Ebook: PDF + EPUB | `STRIPE_PRICE_BOOK` |
 
-Checkout product ids: `book` only. Promotion codes enabled — first-100 launch code **H2LP100** ($19.97 → $9.97) is advertised on the page.
+Checkout product ids: `book` only. One price, printed plain. One purchase button. No list price, no promo code, no bundle.
+
+**$19.97 is retired** in favor of $9.99. It is not shown as a strike or a comparison. `/api/checkout` charges the active one-time **$9.99** Price. If `STRIPE_PRICE_BOOK` still points at the retired $19.97 Price, checkout uses the $9.99 Price on that same product and does not charge $19.97. The old first-100 code was $9.97, not $9.99 — that code is no longer advertised. There is no workbook and no $47 bundle on this page.
 
 ## Deliverables
 

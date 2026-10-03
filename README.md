@@ -6,11 +6,13 @@ Sales copy lives in `src/components/H2LPPage.tsx` and follows the approved copy 
 
 ## Offer
 
-| Offer | Charge | List | Includes | Stripe env |
-|---|---|---|---|---|
-| **book** (BOOK) | **$19.97** (1997¢) | $39.97 | Ebook: PDF instantly + EPUB when formatting is done | `STRIPE_PRICE_BOOK` |
+| Offer | Price | Includes | Stripe env |
+|---|---|---|---|
+| **book** (BOOK) | **$9.99** (999¢) | Ebook: PDF + EPUB | `STRIPE_PRICE_BOOK` |
 
-Checkout product ids: `book` only. Promotion codes enabled — first-100 launch code **H2LP100** ($19.97 → $9.97) is advertised on the page.
+Checkout product ids: `book` only. One price, printed plain. No list price, no promo code.
+
+**$19.97 is retired** in favor of $9.99. It is not shown as a strike or a comparison. The page does not charge by itself: `/api/checkout` still uses the Price ID in `STRIPE_PRICE_BOOK`. Confirm that Price is $9.99 in Stripe. The old first-100 code was $9.97, not $9.99 — that code is no longer advertised.
 
 ## Deliverables
 

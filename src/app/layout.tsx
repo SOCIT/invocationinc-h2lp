@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${brand.bookTitle} — ${brand.name}`,
     description:
-      "How to Like People — a blunt field manual for social fluency. Ebook $19.97 direct from the author.",
+      "How to Like People — a blunt field manual for social fluency. Ebook $9.99 direct from the author.",
     siteName: brand.name,
     type: "website",
   },

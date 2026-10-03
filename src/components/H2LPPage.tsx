@@ -121,13 +121,9 @@ export function H2LPPage() {
           yourself.&rdquo; Reps.
         </p>
 
-        <div className="lf-cta" id="buy-hero">
-          <BuyButton
-            productId="book"
-            label={<>Get the Ebook — {bookProduct.priceDisplay}</>}
-          />
-          <p className="lf-tiny">PDF + EPUB instant download.</p>
-        </div>
+        <p className="lf-tiny" style={{ textAlign: "center" }}>
+          PDF + EPUB. {bookProduct.priceDisplay}.
+        </p>
 
         <h2>Nobody wrote down the rules</h2>
 
@@ -323,10 +319,6 @@ export function H2LPPage() {
             <p>
               <strong>READ.</strong> The ebook. PDF + EPUB. {bookProduct.priceDisplay}.
             </p>
-            <BuyButton
-              productId="book"
-              label={<>Get the Ebook — {bookProduct.priceDisplay}</>}
-            />
             {/*
               Retailer buttons omitted. No listing URL in the repo.
               Missing: Amazon

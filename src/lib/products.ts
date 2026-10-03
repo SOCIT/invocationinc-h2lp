@@ -1,7 +1,8 @@
 /**
  * H2LP offer — the ebook, direct from the author.
- * One price: $9.99. PDF + EPUB. Do not hardcode Stripe Price IDs; wire them via env.
- * $19.97 is retired. No list price, no promo code.
+ * One product, one price: the $9.99 ebook. PDF + EPUB.
+ * No workbook and no bundle on this page. Do not hardcode Stripe Price IDs.
+ * $19.97 is retired. Checkout must charge the $9.99 Price.
  */
 
 export type ProductId = "book";

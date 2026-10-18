@@ -29,7 +29,7 @@ const FAQS: Array<[string, string]> = [
   ],
   [
     "I can\u2019t change my personality.",
-    "You don\u2019t have to. The book\u2019s aim is \u201cconsistent, usable skills which become natural habits \u2014 not some inspiration or motivational talk.\u201d It\u2019s a stack of mechanics: a smile, a conditioned bell, a conversation structure, a mental-prep method. Mechanics can be practiced. Personalities don\u2019t need to be replaced.",
+    "You don\u2019t have to. The aim is skills that become habits, not a personality transplant. It\u2019s a stack of mechanics: a smile, a conditioned bell, a conversation structure, a mental-prep method. Mechanics can be practiced. Personalities don\u2019t need to be replaced.",
   ],
   [
     "This sounds manipulative.",
@@ -49,7 +49,7 @@ const FAQS: Array<[string, string]> = [
   ],
   [
     "I\u2019ve read communication books before. They\u2019re all vague.",
-    "This one names the blocks, the acronym, the rep counts, and the timelines. \u201cIt is especially useful if you have ever felt that \u2018soft skills\u2019 advice was too vague, too gentle, or disconnected from real outcomes.\u201d If you want one more book of \u201cjust be confident,\u201d skip it.",
+    "This one names the blocks, the acronym, the rep counts, and the timelines. If \u2018soft skills\u2019 advice has always felt too vague to use, this one was written against exactly that. If you want one more book of \u201cjust be confident,\u201d skip it.",
   ],
   [
     "Will this work for phone and text, not just in person?",

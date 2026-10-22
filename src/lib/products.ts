@@ -1,6 +1,6 @@
 /**
  * H2LP offer — the ebook, direct from the author.
- * One product, one price: the $9.99 ebook. PDF + EPUB.
+ * One product, one price: the $9.99 ebook. PDF only.
  * No workbook and no bundle on this page. Do not hardcode Stripe Price IDs.
  * $19.97 is retired. Checkout must charge the $9.99 Price.
  */
@@ -46,13 +46,13 @@ export const products: Product[] = [
     id: "book",
     name: "How to Like People — Ebook",
     shortName: "The Ebook",
-    description: "The complete book. PDF + EPUB, available instantly.",
+    description: "The complete book. PDF, available instantly.",
     priceDisplay: "$9.99",
     priceCents: 999,
     stripePriceEnvKey: "STRIPE_PRICE_BOOK",
     paymentLinkUrl: "",
     highlighted: true,
-    features: ["Book PDF — instant download", "EPUB edition — instant download"],
+    features: ["Book PDF — instant download"],
   },
 ];
 

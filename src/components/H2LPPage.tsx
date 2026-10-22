@@ -57,7 +57,7 @@ const FAQS: Array<[string, string]> = [
   ],
   [
     "What exactly do I get?",
-    "The complete book \u2014 sixteen chapters, eight coaching sessions, about 34,000 words \u2014 as a PDF and an EPUB, available to download the second your payment clears.",
+    "The complete book \u2014 sixteen chapters, eight coaching sessions, about 34,000 words \u2014 as a PDF, available to download the second your payment clears.",
   ],
 ];
 
@@ -122,7 +122,7 @@ export function H2LPPage() {
         </p>
 
         <p className="lf-tiny" style={{ textAlign: "center" }}>
-          PDF + EPUB. {bookProduct.priceDisplay}.
+          PDF. {bookProduct.priceDisplay}.
         </p>
 
         <h2>Nobody wrote down the rules</h2>
@@ -317,7 +317,7 @@ export function H2LPPage() {
 
           <div className="lf-format">
             <p>
-              <strong>READ.</strong> The ebook. PDF + EPUB. {bookProduct.priceDisplay}.
+              <strong>READ.</strong> The ebook. PDF. {bookProduct.priceDisplay}.
             </p>
             {/*
               Retailer buttons omitted. No listing URL in the repo.
@@ -356,7 +356,7 @@ export function H2LPPage() {
             label={<>Get the Ebook — {bookProduct.priceDisplay}</>}
           />
           <p className="lf-tiny">
-            PDF and EPUB available to download the second your payment clears.
+            PDF available to download the second your payment clears.
           </p>
           <p className="lf-tiny">
             Sold here direct from the author.

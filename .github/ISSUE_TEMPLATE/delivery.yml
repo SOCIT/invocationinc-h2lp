@@ -1,0 +1,49 @@
+name: Delivery problem
+description: You paid and didn't get the PDF, the download link expired, or the PDF won't open.
+title: "[Delivery] "
+labels: ["delivery"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        How to Like People ships as a PDF only. Don't post card numbers or passwords here. Ever.
+  - type: input
+    id: purchase_email
+    attributes:
+      label: Purchase email
+      description: The email you used at checkout.
+      placeholder: you@example.com
+    validations:
+      required: true
+  - type: input
+    id: purchase_date
+    attributes:
+      label: Approximate purchase date
+      placeholder: "2026-10-22"
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What kind of problem
+      options:
+        - Didn't get the download
+        - Download link expired
+        - PDF won't open or looks broken
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: Plain facts. What you clicked, what you saw, any error text.
+    validations:
+      required: true
+  - type: input
+    id: device_app
+    attributes:
+      label: Device and app
+      description: e.g. iPhone 15 / Apple Books, Windows 11 / Acrobat, Kindle.
+    validations:
+      required: true

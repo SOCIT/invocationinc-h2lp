@@ -1,0 +1,22 @@
+name: Question about the book
+description: Something in How to Like People you want clarified.
+title: "[Content] "
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Short answers only. We won't paste drills or excerpts from the book here. The book is not therapy and not medical advice.
+  - type: input
+    id: chapter
+    attributes:
+      label: Chapter or section (if you know it)
+      placeholder: "Chapter 12"
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true

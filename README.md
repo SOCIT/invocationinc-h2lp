@@ -8,7 +8,7 @@ Sales copy lives in `src/components/H2LPPage.tsx` and follows the approved copy 
 
 | Offer | Price | Includes | Stripe env |
 |---|---|---|---|
-| **book** (BOOK) | **$9.99** (999¢) | Ebook: PDF + EPUB | `STRIPE_PRICE_BOOK` |
+| **book** (BOOK) | **$9.99** (999¢) | Ebook: PDF | `STRIPE_PRICE_BOOK` |
 
 Checkout product ids: `book` only. One price, printed plain. One purchase button. No list price, no promo code, no bundle.
 
@@ -17,7 +17,6 @@ Checkout product ids: `book` only. One price, printed plain. One purchase button
 ## Deliverables
 
 - `public/downloads/h2lp.pdf` — the full book (96 pp, letter), built from `~/workspace/h2lp/manuscript-v1.0.txt` via the kept build script `.src/build_pdf.py`. Re-run the script and re-render with the artifacts skill (`render_audit.mjs` + `validate_pdf.sh`) to regenerate.
-- EPUB: buyers leave an email (source `h2lp-epub`) to be notified when formatting is done.
 
 ## Env
 

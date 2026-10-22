@@ -1,0 +1,41 @@
+name: Billing question
+description: A question about a charge.
+title: "[Billing] "
+labels: ["billing"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Start at https://invocationinc.com/billing. Most charge questions get handled there.
+
+        **Do not post card numbers, bank details, or passwords in this issue.** Issues are not a safe place for them, and we will never ask for them.
+  - type: input
+    id: purchase_email
+    attributes:
+      label: Purchase email
+      placeholder: you@example.com
+    validations:
+      required: true
+  - type: input
+    id: purchase_date
+    attributes:
+      label: Date of the charge
+      placeholder: "2026-10-22"
+    validations:
+      required: true
+  - type: textarea
+    id: whats_wrong
+    attributes:
+      label: What's wrong
+      description: Amount you saw and what you expected. No card numbers.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you submit
+      options:
+        - label: I checked https://invocationinc.com/billing first.
+          required: true
+        - label: I did not include card numbers or passwords.
+          required: true

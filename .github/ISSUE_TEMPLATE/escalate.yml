@@ -1,0 +1,41 @@
+name: Needs a human (incl. legal or press)
+description: Anything else that needs a person, including legal or press inquiries.
+title: "[Escalate] "
+labels: ["escalate"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Invocation Inc's owner desk handles these. Nobody will answer the substance in this issue. Give the facts; a person will follow up.
+
+        Don't post card numbers, passwords, or anything you wouldn't want public.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind
+      options:
+        - Legal
+        - Press
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: contact_email
+    attributes:
+      label: Your email
+      placeholder: you@example.com
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization (if any)
+    validations:
+      required: false
+  - type: textarea
+    id: facts
+    attributes:
+      label: The facts
+      description: What it's about, dates, links. Short.
+    validations:
+      required: true

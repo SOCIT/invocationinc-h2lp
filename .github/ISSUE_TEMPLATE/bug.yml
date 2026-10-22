@@ -1,0 +1,45 @@
+name: Site problem
+description: Something on the website is broken.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For the site at https://invocationinc-h2lp.vercel.app/ only. Don't post card numbers or passwords.
+  - type: input
+    id: page_url
+    attributes:
+      label: Page URL
+      placeholder: https://invocationinc-h2lp.vercel.app/
+    validations:
+      required: true
+  - type: input
+    id: browser_device
+    attributes:
+      label: Browser and device
+      placeholder: "Safari 18 / iPhone 15"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+    validations:
+      required: false

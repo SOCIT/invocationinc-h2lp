@@ -23,7 +23,7 @@ export default async function SuccessPage({
         <p className="lf-stamp">Payment confirmed. Welcome, operator.</p>
         <h1>Your copy of {brand.bookTitle}</h1>
         <p>
-          Both editions are ready right now — download them below and keep them
+          Your copy is ready right now — download it below and keep it
           forever. Check your email for the Stripe receipt.
         </p>
         <div className="lf-cta">
@@ -34,16 +34,6 @@ export default async function SuccessPage({
           >
             Download the PDF
           </a>
-          <a
-            className="lf-btn lf-btn-ghost"
-            href="/downloads/h2lp.epub"
-            download="How-to-Like-People.epub"
-          >
-            Download the EPUB
-          </a>
-          <p className="lf-tiny">
-            PDF for print and desktop; EPUB for e-readers, phones, and tablets.
-          </p>
         </div>
         {sessionId && (
           <p className="lf-tiny" style={{ color: "var(--soft)" }}>

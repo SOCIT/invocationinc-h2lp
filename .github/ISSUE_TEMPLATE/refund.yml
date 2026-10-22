@@ -1,0 +1,32 @@
+name: Refund request not resolved
+description: Only if you already emailed info@invocationinc.com about a refund and it didn't get resolved.
+title: "[Refund] "
+labels: ["refund-fail"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Refund requests go to info@invocationinc.com. Use this form only if you already emailed and it wasn't resolved.
+
+        Invocation Inc's owner desk handles these. Nobody will answer the substance here; a person will follow up. Don't post card numbers or passwords.
+  - type: input
+    id: purchase_email
+    attributes:
+      label: Purchase email
+      placeholder: you@example.com
+    validations:
+      required: true
+  - type: input
+    id: emailed_date
+    attributes:
+      label: Date you emailed info@invocationinc.com
+      placeholder: "2026-10-22"
+    validations:
+      required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: What you asked for and what, if anything, you heard back.
+    validations:
+      required: true

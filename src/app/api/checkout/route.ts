@@ -55,7 +55,6 @@ export async function POST(request: NextRequest) {
       cancel_url: `${siteUrl}/cancel`,
       metadata: { productId },
       billing_address_collection: "auto",
-      allow_promotion_codes: true,
     });
 
     if (!session.url) {

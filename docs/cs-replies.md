@@ -20,37 +20,37 @@ Rules for anyone replying:
 
 > Thanks. The book is a PDF, and the download is on the confirmation page you land on after checkout. We're checking the order under the email you gave and will post back here. Don't post card numbers or passwords in this thread.
 >
-> Not therapy. Not medical advice. © Invocation Inc.
+> © Invocation Inc.
 
 ## billing
 
 > Charge questions are handled at https://invocationinc.com/billing. Start there. If it doesn't sort it out, say so here with the purchase email and date, and nothing else. Don't post card numbers or passwords.
 >
-> Not therapy. Not medical advice. © Invocation Inc.
+> © Invocation Inc.
 
 ## content
 
 > Short answer: [one or two plain sentences, FAQ-depth]. The full method is in [chapter / SmileBell™ / the 4% Rule / CLIFFORD / Mental State + Framing]. We don't reproduce drills or excerpts here.
 >
-> Not therapy. Not medical advice. © Invocation Inc.
+> © Invocation Inc.
 
 ## bug
 
 > Thanks for the report. We'll try to reproduce it on [page URL] with [browser/device]. If you have a screenshot, add it here.
 >
-> Not therapy. Not medical advice. © Invocation Inc.
+> © Invocation Inc.
 
 ## refund-fail
 
 > Got it. This goes to Invocation Inc's owner desk, and a person will follow up. Don't post card numbers or passwords here.
 >
-> Not therapy. Not medical advice. © Invocation Inc.
+> © Invocation Inc.
 
 ## escalate / legal / press
 
 > Received. Invocation Inc's owner desk handles this, and a person will follow up. We won't discuss it further in this issue.
 >
-> Not therapy. Not medical advice. © Invocation Inc.
+> © Invocation Inc.
 
 ## coaching ask
 
@@ -58,7 +58,7 @@ Use exactly this. Don't offer to connect them, a waitlist, or a contact form.
 
 > Private work is by referral from prior clients only.
 >
-> Not therapy. Not medical advice. © Invocation Inc.
+> © Invocation Inc.
 
 ## wrong book
 
@@ -66,4 +66,4 @@ For a buyer who wanted How to Train Your Partner. Don't send them to it.
 
 > How to Like People is the book for dealing with kids, employees, bosses, coworkers and vendors. That's what this one covers. For anything about the charge, start at https://invocationinc.com/billing.
 >
-> Not therapy. Not medical advice. © Invocation Inc.
+> © Invocation Inc.

@@ -148,8 +148,8 @@ export function H2LPPage() {
         <p>
           And if you&rsquo;re an engineer, an IT person, or someone on the spectrum:
           this was written for how you learn. Blocks. Acronyms. Checklists. Rep
-          counts. The unwritten rules, written down &mdash; no vibes required. (It&rsquo;s
-          a skill manual, not therapy, and it doesn&rsquo;t pretend to be.)
+          counts. The unwritten rules, written down &mdash; no vibes required. It&rsquo;s
+          a skill manual.
         </p>
 
         <h2>The stack</h2>
@@ -384,7 +384,7 @@ export function H2LPPage() {
       </main>
 
       <footer className="lf-footer">
-        <p>© {new Date().getFullYear()} Invocation Inc. Not therapy. Not medical advice.</p>
+        <p>© {new Date().getFullYear()} Invocation Inc.</p>
         <p className="lf-imprint-line">
           <img
             src="/img/invocation-logo.png"

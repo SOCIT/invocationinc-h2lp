@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Short answers only. We won't paste drills or excerpts from the book here. The book is not therapy and not medical advice.
+        Short answers only. We won't paste drills or excerpts from the book here.
   - type: input
     id: chapter
     attributes:

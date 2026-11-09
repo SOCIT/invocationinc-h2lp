@@ -398,7 +398,7 @@ export function H2LPPage() {
           </span>
         </p>
         <p>
-          <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link>
+          <Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link> · <Link href="/refund">Refund</Link>
         </p>
       </footer>
     </>
